@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+   int t ;
+   cin >> t;
+   int n;
+   cin >> n;
+   int heightsum = 0;
+   string a;
+   for ( int i = 0 ; i < n ; i++)
+   {
+    for ( int j = 0 ; j < i ; j++)
+    {
+     if ( a[i] < a[j])
+    
+   }
+  
+}
+}
