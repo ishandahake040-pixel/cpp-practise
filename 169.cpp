@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int t;
+    cin >> t;
+
+    while(t--)
+    {
+        int a,b,c,d;
+        cin >> a >> b >> c >> d;
+
+        int count = 0;
+
+        if(b > d || a + (d-b) < c)
+        {
+            cout << "-1" << endl;
+        }
+        else
+        {
+            count = d-b;
+            count = count + (a+(d-b)-c);
+
+            cout << count << endl;
+        }
+    }
+
+    return 0;
+}
