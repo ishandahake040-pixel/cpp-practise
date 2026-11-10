@@ -1,0 +1,38 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int t;
+    cin >> t;
+
+    while(t--)
+    {
+        int n;
+        cin >> n;
+
+        int a[100];
+        int prod = 1, sum = 0, count = 0;
+
+        for(int i = 0; i < n; i++)
+        {
+            cin >> a[i];
+
+            if(a[i] == 0)
+            {
+                a[i]++;
+                count++;
+            }
+            sum += a[i];
+        }
+
+        if(sum == 0)
+        {
+            count++;
+        }
+
+        cout << count << endl;
+    }
+
+    return 0;
+}
